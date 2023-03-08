@@ -1,0 +1,141 @@
+:root {
+    --primary: #989696;
+    --background: rgb(5, 16, 15);
+   
+   }
+   
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       outline: none;
+       border: none;
+       text-decoration: none;
+   
+   }
+   
+   body {
+       font-family: 'Courier New', Courier, monospace;
+       background-color: var(--background);
+       color:white;
+       /* min-height: 2000px; */
+   }
+   
+   /* Navbar */
+   
+   .Navbar {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 1.4rem 7%;
+       background-color: rgba(5, 16, 15, 0.8);
+       border-top: 1px solid rgba(152, 150, 150, 0.7);
+       position: fixed;
+       /* top: 0; */
+       left: 0;
+       right: 0;
+       bottom: 0;
+       z-index: 9999;
+   }
+   
+   .Navbar .Navbar-logo {
+       font-size: 2rem;
+       font-weight: 600;
+       color: rgb(255, 255, 255);
+   }
+   
+   .Navbar .Navbar-logo span {
+       color: rgb(78, 138, 132);
+   }
+   
+   .Navbar .Navbar-Nav a {
+       color: #ffffff;
+       display: inline-block;
+       font-size: 1rem;
+       margin: 0 1rem;
+   }
+   
+   .Navbar .Navbar-Nav a:hover {
+       color: var(--primary);
+       font-size: 1.2rem;
+   }
+   
+   .Navbar .Navbar-Extra a {
+       color: black;
+       margin: 0 0.5rem;
+   }
+   
+   .Navbar .Navbar-Extra a:hover {
+       color: var(--primary);
+       transform: scaleX(1.5) ;
+   }
+   
+   #Menu {
+       display: inline-block;
+   }
+   
+   
+   
+   .Landing {
+       min-height: 100vh;
+       display: flex;
+       align-items: top;
+       justify-content: center;
+       background-image: url('../img/home-background.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       position: relative;
+   }
+   
+   .Landing::after {
+       content: '';
+       display: block;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       background: linear-gradient(0deg, rgba(5, 16, 15, 1) 10%, rgba(78, 138, 132, 0) 25%);
+   }
+   
+   .Landing .content {
+       padding: 1.4rem 7%;
+       margin-top: 8vh;
+       /* max-width: 60rem; */
+   }
+   
+   .Landing .content h1 {
+       font-size: 4.5em;
+       color: rgb(5, 16, 15);
+       font-weight: 600;
+       text-align: center;
+       text-shadow: 3px 3px 5px rgba(5, 16, 15, 0.5);
+   }
+   
+   .Landing .content h1 span {
+       color: #4e8a84;
+       text-shadow: 3px 3px 5px rgba(5, 16, 15, 0.5);
+   }
+   
+   .Landing .content p {
+       font-size: 1.5em;
+       color: #4e8a84;
+       display: block;
+        background-color: rgba(5, 16, 15, 0.8);
+       font-weight: 600;
+       text-align: center;
+       text-shadow: 1px 1px 3px rgba(5, 16, 15, 0.5);
+   }
+   
+   
+   /* .Navbar .Navbar-Nav{
+       position: absolute;
+       top: 100%;
+       right: -100%;
+       width: 30rem;
+       background-color: black;
+       height: 100vh;
+   } */
+   
+   /* .Navbar .Navbar-Nav.active{
+       right: 0;
+   } */
